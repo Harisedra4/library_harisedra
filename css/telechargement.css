@@ -1,0 +1,45 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+#historique{
+    background-image: url(../images/bg/bga6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vw;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    padding: 1vw;
+}
+.fa-sign-out-alt{
+    font-size: 1vw;
+}
+.categories{
+    width: 70%;
+    height: 45vw;
+    background: rgba(255, 0, 0, 0);
+    margin-bottom: 5vw;
+    left: 5vw;
+    top: 10vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.resume{
+    height: 45vw;
+    right: 4vw;
+    top: 10vw;
+}
+.boutonrecom{
+    margin: 1vw;
+}
+.telecharge{
+    position: absolute;
+    top: 7vw;
+    font-size: 2vw;
+}

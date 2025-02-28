@@ -1,0 +1,87 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+@font-face {
+    font-family: titre1;
+    src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: titre2;
+    src: url(../font/Sriracha-Regular.ttf);
+}
+#ajoutlivre{
+    height: 55vw;
+    background-image: url(../images/bg/bga6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.ajouter{
+    width: 80%;
+    height: 40vw;
+    background: rgb(2, 2, 48);
+    position: absolute;
+    bottom: 3vw;
+    border-radius: 1vw;
+    color: white;
+    padding: 2vw;
+    font-size: 1vw;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-family: titre2;
+    font-size: 3vw;
+}
+#gratuit,#Payant{
+    width: 1vw;
+}
+.prix{
+    margin-left: 3vw;
+}
+.option{
+    display: flex;
+}
+#resumelivre{
+    width: 40%;
+    padding: .5vw 1vw;
+}
+img{
+    position: absolute;
+    width: 40%;
+    top: 2vw;
+    right: 3vw;
+}
+h1{
+    color: black;
+}
+.poster{
+    border: none;
+}
+#prix{
+    width: 5vw;
+}
+.dolar{
+    position: absolute;
+    top: 572px;
+    left: 5vw;
+    color: black;
+}
+.publier{
+    position: absolute;
+    bottom: 3vw;
+    right: 13vw;
+    width: 10%;
+    border-radius: 5px;
+}
+.publier:hover{
+    background-color: #cac02e;
+    color: black;
+    transform: scale(1.1);
+    transition: .5s;
+}

@@ -1,0 +1,595 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+    /* font-size: 0.5em; */
+}
+
+@font-face {
+    font-family: titre1;
+    src: url(font/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: titre2;
+    src: url(font/Sriracha-Regular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    /* background: red; */
+    height: 6vw;
+    /* margin-top: 1vw; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.contenuHeader{
+    background: rgb(233, 226, 226);
+    height: 4vw;
+    margin: 1vw .5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* padding: 1vw; */
+    border-radius: 1vw;
+    
+}
+.logo{
+    margin-left: 1vw;
+    margin-right: 5vw;
+}
+.conte{
+    /* background: red; */
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+    margin: 1vw;
+    padding: .2vw .5vw;
+    border: .5px solid rgba(0, 0, 0, 0.856);
+    border-radius: 1vw;
+}
+a:hover{
+    background-color: #0c0f2e;
+    color: white;
+    transform: scale(1.1);
+    transition: .5s;
+}
+ #sectionAcceuil{
+    height: 60vw;
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.categories{
+    width: 13vw;
+    height: 49vw;
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0.644);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: left;
+    padding: 1vw;
+    top: 6vw;
+    left: 1vw;
+} 
+hr{
+    border: 1px dashed  black ;
+    margin: 2vw;
+}
+#sectionAcceuil .categories a i{
+    font-size: 1vw;
+    margin: 2px;
+}
+.cataloge{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.644);
+    width: 60%;
+    top: 6vw;
+    left: 16vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boutonrecom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cataloge .boutonrecom a{
+    margin: 0;
+    margin-right: 2vw;
+}
+.livre{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categorie{
+   top: 30vw;
+}
+
+.cataloge .book:nth-child(2){
+    background: #0c0f2e;
+}
+.cataloge .book:nth-child(3){
+    background: rgb(31, 28, 28);
+}
+.cataloge .book:nth-child(4){
+    background: #961c4b;
+}
+.book{
+    width: calc(80%/4);
+    background: #50bae4;
+    margin: 10px;
+    padding: 1vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 20vw;
+
+}
+
+.book:hover{
+    transform: scale(1.1);
+}
+
+.poster_img{
+    width: 90%;
+    height: 67%;
+}
+.poster{width: 100%;height: 100%;}
+h6{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1vw;
+
+}
+.cataloge .boutonrecom i{
+    font-size: 1vw;
+}
+.resume{
+    width: 20vw;
+    height: 49vw;
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0.644);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: left;
+    padding: 1vw;
+    top: 6vw;
+    right: 1vw;
+} 
+h1{
+    font-size: 3vw;
+    text-transform: capitalize;
+    color: black;
+    font-family: titre2;
+}
+span{
+    text-transform: capitalize;
+    font-style: italic;
+}
+.paragraphe{
+    font-size: 1vw;
+    margin-bottom: 3vw;
+}
+p{
+    margin: .5vw;
+    font-size: 1vw;
+}
+.inscription{
+    position: absolute;
+    left: 27vw;
+    
+}
+#sectionService{
+    background-image: url(../images/bgAcceuil.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.service{
+    background: rgba(185, 215, 226, 0.966);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(80%/4);
+    height: 30vw;
+    border-radius: 1vw;
+    padding: .5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.imgService{
+    width: 100%;
+    height: 15vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+.reservice{
+    position: absolute;
+    bottom: 0vw;
+}
+#sectionPropos{
+    height: 30vw;
+    padding: 3vw 0vw;
+    background-image: url(../images/bg/ab1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.propos{
+    width: calc(70%/5);
+    margin-top: 2vw;
+    /* height: 40vw; */
+}
+#contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-image: url(../images/bg/abg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+}
+.lescontact{
+    width: calc(80%/2);
+    /* background: rgba(255, 255, 255, 0.644); */
+    border: 1px solid black;
+    margin: 2vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vw;
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    top: 3vw;
+}
+.boitecontact{
+    /* background: blue; */
+    width: calc(80%/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vw;
+    border: 2px solid black;
+    border-radius: 1vw;
+    position: absolute;
+    color: white;
+}
+h4{
+    font-size: 2vw;
+}
+.fa{
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+.contact{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: rgb(2, 2, 36);
+    color: white;
+    padding: 1vw;
+}
+.b1{
+left: 3vw;
+top: 4vw;
+}
+.b2{
+    left: 19vw;
+    top: 4vw;
+}
+.b3{
+    left: 3vw;
+    top: 17vw;
+}
+.b4{
+    left: 19vw;
+    top: 17vw;
+}
+form{
+    width: 100%;
+}
+input{
+    width: 40%;
+    margin: 1vw;
+    padding: .5vw 1vw;
+    border: solid 1px black;
+    border-radius: 1vw;
+    box-shadow: .5vw black;
+}
+textarea{
+    margin: 1vw;
+    width: 85%;
+    height: 5vw;
+    border: solid 1px black;
+    border-radius: 1vw;
+}
+button{
+    margin:1vw;
+    padding: .5vw 1vw;
+    border: solid 1px black;
+    border-radius: 1vw;
+}
+footer{
+    padding: 1vw;
+    background: rgb(2, 2, 36);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 2vw; */
+}
+h5{
+    position: absolute;
+    top: 1vw;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    background: rgba(185, 215, 226, 0.966);
+    padding: .5vw 1vw;
+    width: 40%;
+    text-align: center;
+    border-radius: 1vw;
+}
+.resume{
+    width: 15vw;
+    height: 49vw;
+    /* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.postere{
+    width: 12vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(22, 20, 20);
+}
+.resume .postere img{
+    width: 10vw;
+    margin: 1vw;
+}
+.resumelivre{
+    width: 97%;
+    /* background: white; */
+}
+.lire{
+    border-radius: 2px;
+    background: rgb(6, 6, 110);
+    color: white;
+    font-size: 1vw;
+    border: none;
+    width: 60%;
+    margin: 0;
+}
+.lire:hover{
+    background-color: #0c0f2e;
+    color: white;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.fa-book-open{
+    font-size: 20px;
+    margin: 0;
+}
+.proposnous{
+    margin-top: 4vw;
+}
+.connexion{
+    position: absolute;
+    width: 20vw;
+    height: 40vw;
+    padding: 1vw;
+    background: linear-gradient(rgba(185, 215, 226, 0.966),rgba(250, 250, 250, 0.966));
+    clip-path: polygon(50% 0%, 100% 0, 100% 99%, 52% 91%, 1% 100%, 0 0);
+    bottom: 15vw;
+    right: 1vw;
+    border-radius: 1vw;
+    color: black;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.conect{
+    font-size: 2vw;
+    text-transform: none;
+    margin-left: 4vw;
+}
+.formel{
+    width: 80%;
+    border: none;
+}
+.seconnect{
+    margin-left: 116px;
+    margin-top: 70px;
+    
+}
+.seconnect:hover{
+    background-color: #0c0f2e;
+    color: white;
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+.connexionhead{
+    background: rgb(6, 6, 110);
+    color: white;
+    border-radius: 5px;
+    height: 2vw;
+    width: 9vw;
+}
+.connexionhead:hover{
+    background-color: #0c0f2e;
+    color: white;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.fa-download{
+    font-size: 1vw;
+    color: white;
+}
+.download{
+    width: 70%;
+    padding: 10px;
+    height: 2vw;
+    border-radius: 2px;
+    background: rgb(6, 6, 110);
+    color: white;
+    margin-top: 10px;
+
+}
+.download:hover{
+    background-color: #0c0f2e;
+    color: white;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.prix{
+    margin: 10px;
+}
+.fa-sign-in-alt{
+    font-size: 1vw;
+}
+.profilpp{
+    width: 3vw;
+    height: 3vw;
+    background: white;
+    text-align: center;
+    border-radius: 1vw;
+    overflow: hidden;
+    margin-left: 2vw;
+    margin-bottom: 10px;
+}
+.pdeprofilpp{
+    width: 100%;
+    /* border-radius: 100%; */
+}
+.pseudo{
+    font-size: 2vw;
+    position: absolute;
+}
+#profilb{
+    border: none;
+}
+#profilb:hover{
+    background: none;
+    color: black;
+}
+.btninscription{
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 1vw;
+    text-decoration: underline;
+}
+.btninscription:hover{
+    border: solid 1px black;
+    background-color: #0c0f2e;
+    color: white;
+    transform: scale(1.1);
+    /* padding: .5vw; */
+}
+.like{
+    position: absolute;
+    background: none;
+    border: none;
+    color: white;
+    width: 1vw;
+    font-size: 10px;
+    left: 1vw;
+}
+.like:hover{
+    transform: scale(1.1);
+}
+.fa-heart{
+    font-size: 1vw;
+}
+.fa-search{
+    font-size: 30px;
+}
+.btnresee{
+    border: none;
+    background: none;
+    position: absolute;
+    top: .5vw;
+    left: 83vw;
+
+}
+.formreserch{
+    width: 20%;
+}
+.formreserch input{
+    width: 145%;
+}
+#buttonCaché{background: turquoise;text-transform: uppercase;color: white;border: none;position: relative;bottom: 1vw;}
+#buttonCaché:hover{background: red;transform: scale(1.2);}
+#boiteLivre{width: 100%;overflow: hidden;height: 22vw;}
+.resumelivre{height: 12vw;overflow: scroll;}
+.book_cataloge{height: 21vw;}
+.boolConnex{bottom: -40vw;}
+.inscriptionUser{position: absolute;height: 41vw;background: #50bae4;top: -100vw;width: 55vw;padding: 2vw 5vw;border-radius: 2vw;border: 1vw purple solid;}
+.inscriptionUser h1,.inscriptionUser label,.inscriptionUser input,.inscriptionUser button{margin: 0;color: purple;}
+.inscriptionUser h1{font-size: 2vw;text-align: center;}
+.inscriptionUser input{width: 100%;}
+.inscriptionUser button{background: purple;color: white;padding: 1vw;margin: 1vw;width: 10vw;position: relative;left: calc(70%/2);}
+.fa-times{position: absolute;color: purple;top: .5vw;right: 1vw;}
+.addClass{top: 6vw;}
+#inputFile{border: none;}
+.fa-user-plus{font-size: 1.5w;}
+.status{position: fixed;padding: 3vw;width: 70%;height: 15vw;border:1vw purple solid;border-radius: 2vw;margin: 0 auto;z-index: 20;top: 10vw;left: 10vw;background: rgb(132, 202, 223);}
+.status h3{font-size: 4vw;font-family: serif; color: purple;text-align: center;}
+#fa-times2{font-size: 4vw;left: 59.5vw;top: -3.5vw;}
+.addClass2{top: -50vw;}
+#buttonEscape{background: rgb(132, 202, 223);border: none;position: absolute;}
+.profilConnect{border: .2vw solid black;background: white;padding: 1vw;border-radius: 1vw;}
+.profilConnect h4{color: red;font-size: 1.5vw;background: white;padding: .1vw;border: .2vw solid purple;border-radius: 1vw;text-align: center;width: 9vw;height: 2.3vw;margin: 0 auto;}
+.profilConnect h4 i{font-size: 1vw;}
+.profilConnect p{font-size: 2vw;text-align: center;}
+.profilConnect img{width: 9vw;height: 9vw;border-radius: 50%;margin: 0 auto;border: .2vw solid purple;}
+#profilUserConnect{background: purple;color: white;width: 15vw;padding: .2vw 2vw;}
+.deconnexionhead{background: blue;color: red;padding: .5vw 1vw;font-size: 1.3vw;font-weight: bold;}
+.h3merdique{padding: 1vw;}

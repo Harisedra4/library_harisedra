@@ -1,0 +1,57 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+#profil{
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vw;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.utilisateur{
+    width: 95%;
+    height: 45vw;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.568);
+    left: 3vw;
+    bottom: 2vw;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+.Apropos{
+    width: 20%;
+    height: 100%;
+    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pdp{
+    width: 15vw;
+    height: 15vw;
+    /* background: red; */
+    /* margin: 1vw; */
+    border-radius: 50%;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.imagepdp{
+    width: 15vw;
+    height: 15vw;
+}
+hr{
+    border: 1px dashed black;
+    width: 15vw;
+}
+h1{
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+}
